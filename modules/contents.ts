@@ -1,7 +1,7 @@
 // Layer 2 - feature module for the "contents"/customers featu
 // define the shape of the state we want to keep
 
-import { Module } from "@opensource-dev/athena" 
+import { Module } from "@opensource-dev/athena";
 
 interface ContentsState {
   count: number;
