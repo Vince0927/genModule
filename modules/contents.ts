@@ -15,7 +15,7 @@ const contents = new Module<ContentsState>({
       return { count: 0 };
     },
     incrementCountTimes2(state) {
-      return { count: state.count * 2 };
+      return { count: state.count + 2 };
     },
   },
 });
