@@ -14,9 +14,13 @@ const contents = new Module<ContentsState>({
     resetCount() {
       return { count: 0 };
     },
+    incrementCountTimes2(state) {
+      return { count: state.count * 2 };
+    },
   },
 });
 
 // expose the hook and actions via a simple, flat API
 export const useContents = contents.useState.bind(contents);
-export const { incrementCount, resetCount } = contents.actions;
+export const { incrementCount, resetCount, incrementCountTimes2 } =
+  contents.actions;
